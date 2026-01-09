@@ -1,0 +1,23 @@
+{
+    "name": "restaurante-lit-next",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@studio-freight/react-lenis": "^0.0.47",
+        "framer-motion": "^10.16.4",
+        "lucide-react": "^0.292.0",
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest"
+    },
+    "devDependencies": {
+        "eslint": "^8",
+        "eslint-config-next": "latest"
+    }
+}
