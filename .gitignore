@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dependencies
 /node_modules
 /.pnp
@@ -27,3 +28,28 @@ ts-debug.log*
 
 # vercel
 .vercel
+=======
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+>>>>>>> 73fd5bf4bf01439ad7c7025afacfeb6cc5d8371d

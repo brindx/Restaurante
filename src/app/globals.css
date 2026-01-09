@@ -1,30 +1,10 @@
-:root {
-    --bg-body: #f4f1ea;
-    /* Cream/Bone - "Old Money" */
-    --text-main: #1a1a1a;
-    --text-muted: #666666;
-    --accent: #cd3131;
-    /* International Orange/Red for that 'Michelin' spark */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--bg-body);
-    color: var(--text-main);
-    font-family: var(--font-body);
-    overflow-x: hidden;
-}
-
-/* Hide default scrollbar for Lenis */
-html.lenis {
+/* Lenis Smooth Scroll Styles */
+html.lenis,
+html.lenis body {
     height: auto;
 }
 
@@ -40,30 +20,6 @@ html.lenis {
     overflow: hidden;
 }
 
-/* Fluid Typography */
-h1,
-.text-display-huge {
-    font-size: clamp(3rem, 10vw, 15rem);
-    line-height: 0.85;
-    letter-spacing: -0.02em;
-}
-
-.container-fluid {
-    width: 94%;
-    margin: 0 auto;
-}
-
-/* Utility Classes */
-.clip-text-image {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Magnetic Button Effect (Simple CSS part) */
-.btn-magnetic {
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
 }
